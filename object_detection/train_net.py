@@ -56,33 +56,34 @@ def main(args):
     """
     register publaynet first
     """
+    # The PNG and JSON file be kept at the data folder
     register_coco_instances(
-        "publaynet_train",
+        "custom_train",
         {},
-        "./publaynet_data/train.json",
-        "./publaynet_data/train"
+        "./data/json/train.json",
+        "./data/PNG"
     )
 
     register_coco_instances(
-        "publaynet_val",
+        "custom_val",
         {},
-        "./publaynet_data/val.json",
-        "./publaynet_data/val"
+        "./data/json/val.json",
+        "./data/PNG"
     )
 
-    register_coco_instances(
-        "icdar2019_train",
-        {},
-        "data/train.json",
-        "data/train"
-    )
+    # register_coco_instances(
+    #     "icdar2019_train",
+    #     {},
+    #     "data/train.json",
+    #     "data/train"
+    # )
 
-    register_coco_instances(
-        "icdar2019_test",
-        {},
-        "data/test.json",
-        "data/test"
-    )
+    # register_coco_instances(
+    #     "icdar2019_test",
+    #     {},
+    #     "data/test.json",
+    #     "data/test"
+    # )
 
     cfg = setup(args)
 

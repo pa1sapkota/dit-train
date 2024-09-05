@@ -57,6 +57,8 @@ def main(args):
     register publaynet first
     """
     # The PNG and JSON file be kept at the data folder
+    
+    
     register_coco_instances(
         "custom_train",
         {},

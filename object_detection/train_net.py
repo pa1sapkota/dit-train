@@ -14,6 +14,9 @@ import os
 import itertools
 
 import torch
+import warnings
+warnings.filterwarnings('ignore')
+
 
 from typing import Any, Dict, List, Set
 

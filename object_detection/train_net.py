@@ -65,15 +65,15 @@ def main(args):
     register_coco_instances(
         "custom_train",
         {},
-        "/kaggle/working/final/train.json",
-        "/kaggle/working/final/PNG"
+        "data/train.json",
+        "data/PNG"
     )
 
     register_coco_instances(
         "custom_val",
         {},
-        "/kaggle/working/final/val.json",
-        "/kaggle/working/final/PNG"
+        "data/val.json",
+        "data/PNG"
     )
 
     # register_coco_instances(
